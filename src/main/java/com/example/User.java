@@ -3,7 +3,7 @@ package com.example;
 import org.springframework.stereotype.Component;
 
 /**
- * 增加代码注释
+ * 增加代码注释2
  */
 @Component
 public class User {
