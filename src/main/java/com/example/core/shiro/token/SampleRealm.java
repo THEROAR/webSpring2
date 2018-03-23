@@ -42,6 +42,7 @@ public class SampleRealm extends AuthorizingRealm {
 	public SampleRealm() {
 		super();
 	}
+
 	/**
 	 *  认证信息，主要针对用户登录， 
 	 */

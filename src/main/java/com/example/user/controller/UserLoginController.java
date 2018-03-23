@@ -61,7 +61,7 @@ public class UserLoginController extends BaseController {
              * 之前0.1版本这个没判断空。
              */
             SavedRequest savedRequest = WebUtils.getSavedRequest(request);
-            String url = null ;
+            String url = null;
             if(null != savedRequest){
                 url = savedRequest.getRequestUrl();
             }
@@ -74,6 +74,7 @@ public class UserLoginController extends BaseController {
             if(StringUtils.isBlank(url)){
                 url = request.getContextPath() + "/user/index.shtml";
             }
+            System.out.println("此时跳转的url是:" + url);
             //跳转地址
             resultMap.put("back_url", url);
             /**
